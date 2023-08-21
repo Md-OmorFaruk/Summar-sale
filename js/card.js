@@ -192,6 +192,8 @@ document.getElementById('card-9').addEventListener('click', function () {
 document.getElementById('but-1').addEventListener('click', function () {
       const inputField = document.getElementById('infield')
       const inValue = inputField.value;
+      inputField.value = '';
+
 
       const totalMoney = document.getElementById('discount');
       const totalMoneyInner = totalMoney.innerText;
@@ -199,6 +201,7 @@ document.getElementById('but-1').addEventListener('click', function () {
       if (inValue == 'SELL200') {
             totalMoney.innerText = moneyInt + (document.getElementById('total').innerText * 0.2);
             document.getElementById('total').innerText = document.getElementById('total').innerText - totalMoney.innerText;
+            
             
       }
       
@@ -208,6 +211,15 @@ document.getElementById('home').addEventListener('click', function () {
       document.getElementById('totalprice').innerText = 0;
       document.getElementById('total').innerText = 0;
       document.getElementById('discount').innerText = 0;
+
+      document.getElementById('but-1').setAttribute('disabled','true');
+      document.getElementById('purchases').setAttribute('disabled', 'true');
+      
+      let myList = document.getElementById('listGroup');
+      while (listGroup.firstChild) {
+            myList.removeChild(listGroup.firstChild);
+      }
+       document.getElementById('none').style.display = 'block';
 
 });
 

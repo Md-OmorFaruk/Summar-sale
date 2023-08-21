@@ -28,11 +28,11 @@
       <header>
             <!--Hero Section-->
             <div class="hero min-h-screen bg-[#F9F6E2] ">
-                  <div class="hero-content flex-col lg:flex-row-reverse gap-40">
-                        <img src="images/Summer 1.png" class="w-[550px] rounded-lg " />
+                  <div class="hero-content flex-col lg:flex-row-reverse gap-5 lg:gap-40">
+                        <img src="images/Summer 1.png" class="w-[300px] xl:w-[550px] rounded-lg " />
                         <div class="text-center">
-                              <p class="mb-8 font-semibold text-2xl">---SALE FEVER---</p>
-                              <h1 class="text-5xl font-bold">Purchase TK 200 or <br>above & get <span class="text-[#E527B2]">20% off</span></h1>
+                              <p class="mb-8 font-semibold text-xl lg:2xl">---SALE FEVER---</p>
+                              <h1 class="text-2xl lg:text-5xl font-bold">Purchase TK 200 or <br>above & get <span class="text-[#E527B2]">20% off</span></h1>
                               <div class="flex items-center gap-5 mt-8 max-w-fit mx-auto">
                                     <p class="py-6 font-semibold text-normal">Use Promo Code</p>
                                     <button class="py-3 bg-[#E527B2] px-7 text-white">SELL200</button>
@@ -47,13 +47,13 @@
                   <div class="flex flex-col md:flex-row gap-10 ">
                         <!--Card Container-->
                         <div class="flex-1">
-                              <h1 class="text-2xl font-bold pt-12 pb-6">Kitchenware</h1>
+                              <h1 class="text-2xl font-bold pt-12 pb-6 text-center lg:text-start">Kitchenware</h1>
 
                               <!--Card 01-->
-                              <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-5">
+                              <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-10 lg:gap-5">
 
                                     <!-- Id Added to the card -->
-                                    <div class="card bg-base-100 p-4 hover:shadow-xl w-full" id="card-1">
+                                    <div class="card bg-base-100 p-4 hover:shadow-xl w-full " id="card-1">
 
                                           <figure class="p-10 bg-slate-100 rounded-xl h-[220px]">
                                                 <img src="images/prod1.png" alt="Shoes" class=" " />
@@ -113,7 +113,7 @@
 
                               </div>
                               <div>
-                                    <h1 class="text-2xl font-bold pt-12 pb-6">Sportswear</h1>
+                                    <h1 class="text-2xl font-bold pt-12 pb-6 text-center lg:text-start">Sportswear</h1>
                               
                                     <!--Card 04-->
                                     <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-5">
@@ -175,7 +175,7 @@
                               
                               </div>
                               <div>
-                                    <h1 class="text-2xl font-bold pt-12 pb-6">Furniture</h1>
+                                    <h1 class="text-2xl font-bold pt-12 pb-6 text-center lg:text-start">Furniture</h1>
                               
                                     <!--Card 07-->
                                     <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-5">
@@ -245,12 +245,12 @@
                               <div class="flex items-center mt-3">
                                     <input type="text" name="" id="infield" placeholder="Coupon code" class="border-2 p-[10px]" >
                                     
-                                    <button class="btn py-3 bg-[#E527B2] hover:bg-[#ff43cd] px-7 text-white rounded-r-lg" id="but-1"  disabled >Apply</button>
+                                    <button class="btn py-3 bg-[#E527B2] hover:bg-[#ff43cd] px-7 text-white rounded-r-xl rounded-l-none" id="but-1"  disabled >Apply</button>
                               </div>
                         </div>
                               <div class="bg-white w-[350px] mt-[40px] min-h-fit p-5 mx-auto">
                                  <div>
-                                    <h1 id="none">Your cart is empty for Purchase please select a product</h1>
+                                    <h1 id="none">Your cart is empty now for Purchase please select a product</h1>
                                     <ol class="list-decimal list-inside font-semibold" id="listGroup">
                                           
                                          
@@ -267,7 +267,7 @@
                               
                               </div>
                               <!-- Open the modal using ID.showModal() method -->
-                              <button class="btn relative bottom-5 left-4  w-[320px] bg-[#E527B2] text-white " onclick="my_modal_2.showModal()" disabled id="purchases" >Make
+                              <button class="btn relative bottom-5 left-14 md:left-3 lg:left-4  w-[320px] bg-[#E527B2] text-white " onclick="my_modal_2.showModal()" disabled id="purchases" >Make
                                     Purchase</button>
                               <dialog id="my_modal_2" class="modal">
                                     <form method="dialog" class="modal-box text-center">
