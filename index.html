@@ -44,14 +44,14 @@
       </header>
       <main class="max-w-[1280px] mx-auto">
             <section class="mb-10">
-                  <div class="flex flex-col md:flex-row gap-10">
+                  <div class="flex flex-col md:flex-row gap-10 ">
                         <!--Card Container-->
-                        <div>
+                        <div class="flex-1">
                               <h1 class="text-2xl font-bold pt-12 pb-6">Kitchenware</h1>
 
                               <!--Card 01-->
                               <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-5">
-                                    <div class="card bg-base-100 p-4 w-full">
+                                    <div class="card bg-base-100 p-4 hover:shadow-xl w-full" id="card-1">
                                           <figure class="p-10 bg-slate-100 rounded-xl h-[220px]">
                                                 <img src="images/prod1.png" alt="Shoes" class=" " />
                                           </figure>
@@ -64,12 +64,12 @@
                                           </div>
                                           <div class="card-body items-center text-center py-0">
                                                 <h2 class="card-title">K. Accessories</h2>
-                                                <p>50.00tk</p>
+                                                <p><span id="card-1-tk">50.00</span>tk</p>
                                           </div>
                                     </div>
 
                                     <!--Card 02-->
-                                    <div class="card bg-base-100 w-full  p-4">
+                                    <div class="card bg-base-100 w-full hover:shadow-xl p-4">
                                           <figure class="p-10 bg-slate-100 rounded-xl h-[220px]">
                                                 <img src="images/prod2.png" alt="Shoes" class=" " />
                                           </figure>
@@ -87,7 +87,7 @@
                                     </div>
 
                                     <!--Card 03-->
-                                    <div class="card bg-base-100 w-full  p-4">
+                                    <div class="card bg-base-100 w-full hover:shadow-xl  p-4">
                                           <figure class="p-10 bg-slate-100 rounded-xl h-[220px]">
                                                 <img src="images/prod3.png" alt="Shoes" class=" " />
                                           </figure>
@@ -111,7 +111,7 @@
                               
                                     <!--Card 04-->
                                     <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-5">
-                                          <div class="card bg-base-100 p-4 w-full">
+                                          <div class="card bg-base-100 p-4 hover:shadow-xl w-full">
                                                 <figure class="p-10 bg-slate-100 rounded-xl h-[220px]">
                                                       <img src="images/prod4.png" alt="Shoes" class=" " />
                                                 </figure>
@@ -128,8 +128,8 @@
                                                 </div>
                                           </div>
                               
-                                          <!--Card 04-->
-                                          <div class="card bg-base-100 w-full  p-4">
+                                          <!--Card 05-->
+                                          <div class="card bg-base-100 w-full hover:shadow-xl p-4">
                                                 <figure class="p-10 bg-slate-100 rounded-xl h-[220px]">
                                                       <img src="images/prod5.png" alt="Shoes" class=" " />
                                                 </figure>
@@ -147,14 +147,14 @@
                                           </div>
                               
                                           <!--Card 06-->
-                                          <div class="card bg-base-100 w-full  p-4">
+                                          <div class="card bg-base-100 w-full hover:shadow-xl p-4">
                                                 <figure class="p-10 bg-slate-100 rounded-xl h-[220px]">
                                                       <img src="images/prod6.png" alt="Shoes" class=" " />
                                                 </figure>
                                                 <div class="rating w-max-fit mx-auto my-3">
                                                       <input type="radio" name="rating-6" class="mask mask-star-2 bg-yellow-400" />
                                                       <input type="radio" name="rating-6" class="mask mask-star-2 bg-yellow-400 " />
-                                                      <input type="radio" name="rating-6" class="mask mask-star-2 bg-yellow-400 "checked />
+                                                      <input type="radio" name="rating-6" class="mask mask-star-2 bg-yellow-400 " checked />
                                                       <input type="radio" name="rating-6" class="mask mask-star-2 bg-yellow-400" />
                                                       <input type="radio" name="rating-6" class="mask mask-star-2 bg-yellow-400 border" />
                                                 </div>
@@ -173,7 +173,7 @@
                               
                                     <!--Card 07-->
                                     <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-5">
-                                          <div class="card bg-base-100 p-4 w-full">
+                                          <div class="card bg-base-100 p-4 w-full hover:shadow-xl">
                                                 <figure class="p-10 bg-slate-100 rounded-xl h-[220px]">
                                                       <img src="images/prod7.png" alt="Shoes" class=" " />
                                                 </figure>
@@ -191,7 +191,7 @@
                                           </div>
                               
                                           <!--Card 08-->
-                                          <div class="card bg-base-100 w-full  p-4">
+                                          <div class="card bg-base-100 w-full  p-4 hover:shadow-xl">
                                                 <figure class="p-10 bg-slate-100 rounded-xl h-[220px]">
                                                       <img src="images/prod8.png" alt="Shoes" class=" " />
                                                 </figure>
@@ -209,7 +209,7 @@
                                           </div>
                               
                                           <!--Card 09-->
-                                          <div class="card bg-base-100 w-full  p-4">
+                                          <div class="card bg-base-100 w-full hover:shadow-xl  p-4">
                                                 <figure class="p-10 bg-slate-100 rounded-xl h-[220px]">
                                                       <img src="images/prod9.png" alt="Shoes" class=" " />
                                                 </figure>
@@ -259,7 +259,17 @@
                                     <br>
                                     <hr>
                                     <br>
-                                    <button class="relative top-28 w-full py-3 bg-[#E527B2] px-7 text-white rounded-lg">Make Purchase</button>
+                                    <!-- Open the modal using ID.showModal() method -->
+                                    <button class="btn relative top-28 w-full bg-[#E527B2] text-white" onclick="my_modal_2.showModal()">Make Purchase</button>
+                                    <dialog id="my_modal_2" class="modal">
+                                          <form method="dialog" class="modal-box text-center">
+                                                <img class="max-w-sm mx-auto" src="images/congo.png" alt="">
+                                                <h3 class="font-bold text-xl">Congratulations</h3>
+                                                <p class="py-4">Your Purchase the product</p>
+                                                <button class="bg-[#E527B2] py-3 px-7 font-bold text-white rounded-lg ">Go Home</button>
+                                          </form>
+                                          
+                                    </dialog>
                               
                               
                               </div>
@@ -273,6 +283,8 @@
       <footer>
 
       </footer>
+      <script src="js/function.js"></script>
+      <script src="js/card.js"></script>
       
 </body>
 </html>
